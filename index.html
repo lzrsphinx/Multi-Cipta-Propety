@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <div class="nav-container">
+        <div class="logo">
+          <img src="LMCP.png" alt="Logo MCP" class="logo-img">
+  <title>PT.MULTI CIPTA PROPERTY</title>
+  <link rel="stylesheet" href="style.css" />
+  </div> 
+</head>
+
+<body>
+  <div class="overlay">
+    <!-- HEADER -->
+    <header>
+      <div class="nav-container">
+        <div class="logo">
+          <img src="LMCP.png" alt="Logo MCP" class="logo-img">
+          <div>
+            <h2>MULTI CIPTA PERMAI</h2>
+            <p>Perumahan Subsidi dengan Type 36 / 84 m²</p>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="#fitur">Fitur</a>
+          <a href="#galeri">Galeri</a>
+          <a href="#kontak">Kontak</a>
+        </nav>
+      </div>  
+    </header>
+ 
+    <!-- HERO -->
+    <section class="hero fade-in">
+      <div class="hero-content">
+        <div>
+          <h1>Rumah Bersubsidi Nyaman & Terjangkau</h1>
+          <p>Dilengkapi infrastruktur lengkap, legalitas jelas, dan lokasi strategis.</p>
+          <div class="hero-buttons">
+            <a href="#kontak" class="btn-primary">Hubungi Sales</a>
+            <a href="#fitur" class="btn-outline">Lihat Fitur</a>
+          </div>
+        </div>
+        <img src="galeri1.jpg" alt="Rumah">
+      </div>
+    </section>
+
+
+  <!-- FITUR -->
+  <section id="fitur" class="fade-in">
+    <h2 class="section-title">Fitur Utama</h2>
+    <p class="section-sub">Desain fungsional dengan standar perumahan subsidi.</p>
+
+    <div class="fitur-grid">
+      <div class="fitur-card">
+        <h3>Legalitas & KPR</h3>
+        <p>Surat lengkap dan kemudahan akses KPR bersubsidi.</p>
+      </div>
+      <div class="fitur-card">
+        <h3>Infrastruktur</h3>
+        <p>Jalan Paving Blok, listrik 1300 VA, Air Sumur Bor Bersih , dan Drainase.</p>
+      </div>
+      <div class="fitur-card">
+        <h3>Strategis</h3>
+        <p>Lokasi Strategis,Hanya 7 menit ke Tol Amplas dan Kota Medan</p>
+      </div>
+    </div>
+
+   <!-- ======== BAGIAN BROSUR ======== -->
+<section id="brosur" class="brosur fade-in">
+  <h2>Brosur Perumahan</h2>
+  <p>Klik tombol di bawah untuk melihat atau mengunduh brosur lengkap.</p>
+
+  <!-- Tombol dan Modal Brosur -->
+  <button id="openBrosurBtn" class="btn-brosur">📄 Lihat Brosur</button>
+
+<div id="brosurModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <iframe src="BROSUR.pdf" width="100%" height="500px" style="border:0;"></iframe>
+  </div>
+</div>
+
+</section>
+
+  </section>
+
+  <!-- GALERI -->
+  <section id="galeri" class="fade-in">
+    <h2 class="section-title">Galeri Rumah</h2>
+    <p class="section-sub">Foto contoh rumah dan lingkungan sekitar.</p>
+
+    <div class="galeri-grid">
+      <img src="galeri2.jpg" alt="">
+      <img src="galeri3.jpg" alt="">
+      <img src="galeri5.jpg" alt="">
+      <img src="galeri4.jpg" alt="">
+    </div>
+  </section>
+
+    <!-- READY STOK -->
+  <section id="ready" class="fade-in">
+   <section id="ready" class="section fade-in">
+  <h2>🏡 Rumah Ready Stok</h2>
+
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">Semua</button>
+    <button class="filter-btn" data-filter="tersedia">Tersedia</button>
+    <button class="filter-btn" data-filter="terjual">Terjual</button>
+  </div>
+
+  <div class="ready-list">
+    <div class="ready-item" data-status="tersedia">
+      <img src="galeri3.jpg" alt="Rumah 36/84">
+      <div class="ready-info">
+        <h3>BLOK MULTI A-12</h3>
+        <p>2 Kamar Tidur • 1 Kamar Mandi • Luas Tanah 84 m²</p>
+        <p class="price">Rp 166.000.000</p>
+      </div>
+      <div class="ready-actions">
+        <button onclick="pesanRumah('Type 36/84', 'Rp 166.000.000')" class="btn-wa">Pesan via WhatsApp</button>
+      </div>
+    </div>
+
+    <div class="ready-item" data-status="tersedia">
+      <img src="galeri3.jpg" alt="Rumah 36/84">
+      <div class="ready-info">
+        <h3>BLOK MULTI A-13</h3>
+        <p>2 Kamar Tidur • 1 Kamar Mandi • Luas Tanah 84 m²</p>
+        <p class="price">Rp 166.000.000</p>
+      </div>
+      <div class="ready-actions">
+        <button onclick="pesanRumah('Type 36/84', 'Rp 166.000.000')" class="btn-wa">Pesan via WhatsApp</button>
+      </div>
+    </div>
+
+    <div class="ready-item" data-status="terjual">
+      <img src="galeri2.jpg" alt="Rumah 36/84">
+      <div class="ready-info">
+        <h3>MULTI CIPTA PERMAI TAHAP 1 & 2</h3>
+        <p>2 Kamar Tidur • 1 Kamar Mandi • Luas Tanah 84 m²</p>
+        <p class="price terjual"> Habis Terjual</p>
+      </div>
+      <div class="ready-actions">
+        <button disabled class="btn-disabled">Sudah Terjual</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </section>
+
+<!-- 📰 SECTION: NEWS -->
+<section id="news" class="fade-in">
+  <div class="container">
+    <h2>Berita & Pengumuman</h2>
+    <p class="section-desc">Dapatkan update terbaru seputar perumahan, promo KPR, dan progres pembangunan.</p>
+
+    <div class="news-grid">
+      <div class="news-card">
+        <img src="https://images.unsplash.com/photo-1600585154154-8e8b0b01efb0?q=80&w=1200" alt="Berita 1">
+        <div class="news-content">
+          <h3>Promo Akhir Tahun: DP Hanya 7 JT All-in untuk Type 36/84</h3>
+          <p>Dapatkan kesempatan memiliki rumah impian tanpa uang muka! Program berlaku hingga 31 Desember 2025.</p>
+          <a href="#" class="btn-news">Lihat Selengkapnya</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <img src="galeri5.jpg" alt="Berita 2">
+        <div class="news-content">
+          <h3>Progres Pembangunan Tahap III Sudah 80%</h3>
+          <p>Pembangunan blok B dan C sudah hampir selesai, dengan estimasi serah terima unit pada bulan Januari 2026.</p>
+          <a href="#" class="btn-news">Lihat Selengkapnya</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <img src="https://images.unsplash.com/photo-1600585153860-195b6b38a1b8?q=80&w=1200" alt="Berita 3">
+        <div class="news-content">
+          <h3>Bank BTN dan BRI Siap Fasilitasi KPR Bersubsidi</h3>
+          <p>Kabar gembira! Kini proses pengajuan KPR bisa dilakukan langsung melalui dua bank mitra kami.</p>
+          <a href="#" class="btn-news">Lihat Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- KONTAK -->
+  <section id="kontak" class="fade-in">
+    <h2 class="section-title">Hubungi Kami</h2>
+    <p class="section-sub">Isi form di bawah untuk informasi lebih lanjut.</p>
+
+    <div class="kontak-container">
+      <div>
+        <h3>Alamat Kantor Proyek</h3>
+        <p>Jl. Fokrat Raya Ujung Pasar 12 Amplas, Kabupaten Deli Serdang</p>
+        <p>Telp: <a href="tel:+6282249123097">+62 822-4912-3097</a></p>
+        <p>Email: multiciptaproperty@gmail.com</p>
+      
+         <div class="map-container">
+         <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7964.698773782228!2d98.7292451!3d3.5063732!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1762318104996!5m2!1sid!2sid"
+  width="600" height="450" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+        </div>
+      </div>
+
+      <form onsubmit="sendWA(event)">
+        <label>Nama</label>
+        <input type="text" id="name" required>
+
+        <label>Email / WhatsApp</label>
+        <input type="text" id="email" required>
+
+        <label>Pesan (opsional)</label>
+        <textarea id="message" rows="4"></textarea>
+
+        <button type="submit">Kirim via WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+    <!-- WHATSAPP FLOAT -->
+  <div class="wa-float">
+    <a href="https://wa.me/6282249123097?text=Halo,%20saya%20tertarik%20dengan%20Perumahan%20Subsidi%20Type%2036/84" 
+       target="_blank" title="Chat via WhatsApp">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Perumahan Subsidi — PT.Multi Cipta Property.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
